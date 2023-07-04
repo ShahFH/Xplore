@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+/**ADD VARIBLES HERE**/
+:root {
+  /**colors**/
+  --foundation_blue: #235784;
+  --white: #ffffff;
+  --foundation_white: #fdfefe;
+  --yellow: #f7aa00;
+  --black: #0a0a00;
+  --foundation_black: #34342b;
+  --foundation_neu_n_300: #eef6f7;
+  /**font**/
+  --nunito_sans: "Nunito Sans", sans-serif;
+  --product_sans: "Product Sans", sans-serif;
+
+  /** spacing **/
+  --margin_xl: 4rem;
+  --padding_xl: 13rem;
+}
+/**default properties */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

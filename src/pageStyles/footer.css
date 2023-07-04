@@ -1,0 +1,62 @@
+footer {
+  background: var(--black);
+  color: var(--white);
+  padding-inline: 12rem;
+  position: relative;
+}
+.footer-container {
+  display: flex;
+  padding: 2rem;
+}
+.footer-section {
+  padding-inline: 1rem;
+}
+.footer-bottom {
+  color: var(--white);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-left: 2rem;
+}
+.social-icons {
+  position: absolute;
+  color: var(--white);
+  right: 20%;
+  top: 20%;
+}
+.social-icons img {
+  padding-right: 2rem;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1024px) {
+  footer {
+    padding-inline: 4rem; /* Reduce the horizontal padding */
+  }
+  
+  .footer-container {
+    flex-direction: row; /* Stack the footer sections vertically */
+    padding: 3rem; /* Reduce the padding around the footer sections */
+    gap: 30px;
+  }
+  
+  .footer-section {
+    padding-inline: 0; /* Remove the horizontal padding from the footer sections */
+    margin-bottom: 1rem; /* Add some space between the footer sections */
+  }
+  
+  .footer-bottom {
+    justify-content: center; /* Center the content horizontally */
+    margin: 1rem 0; /* Adjust the margin */
+  }
+  
+  .social-icons {
+    position: static; /* Remove the absolute positioning */
+    margin-top: 1rem; /* Add some space between the footer sections and social icons */
+    text-align: center; /* Center the social icons horizontally */
+  }
+  
+  .social-icons img {
+    padding: 0.5rem; /* Adjust the padding around the social icons */
+  }
+}

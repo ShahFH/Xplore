@@ -1,0 +1,129 @@
+body {
+  font-family: var(--nunito_sans);
+  height: 100%;
+}
+
+.header {
+  background-color: var(--foundation_blue);
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 222;
+}
+
+.header__navigation {
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.header__navigation > * {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation .header__navigation__left {
+  padding-left: 3%;
+}
+
+.header__navigation .header__navigation__left h3 {
+  margin-left: 1rem;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.header__navigation .header__navigation__right {
+  justify-content: space-around;
+}
+
+.header__naviagation__right__link,
+.header__naviagation__right__link button {
+  color: var(--foundation_white);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.header__naviagation__right__link button {
+  background-color: var(--yellow);
+  border: none;
+  outline: none;
+  color: var(--black);
+  padding: 0.5rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.header__naviagation__right__link:hover,
+.header__naviagation__right__link button:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--black);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: -7rem;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--foundation_white);
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
+.open .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media screen and (max-width: 768px) {
+  .header__navigation {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .header__navigation .header__navigation__left {
+    padding-left: 1rem;
+  }
+
+  .header__navigation .header__navigation__right {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--foundation_blue);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+  }
+
+  .header__navigation .header__navigation__right.open {
+    display: flex;
+  }
+
+  .header__naviagation__right__link,
+  .header__naviagation__right__link button {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
