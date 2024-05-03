@@ -4,7 +4,11 @@ Xplore is your ultimate travel companion, designed to enhance your journeys and 
 
 
 <a href='https://xploree.netlify.app/'>Demo link</a>
+# Home
+<img src="/Home.png"  alt="homescreen" />
 
+# Sigh Up Page
+<img src="/Sign Up.png"  alt="homescreen" />
 # Technology used
 1. React
 2. CSS
