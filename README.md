@@ -1,6 +1,7 @@
 # Xplore - Your Ultimate Travel Companion 🏆
 
-Xplore is your ultimate travel companion, designed to enhance your journeys and make every trip truly memorable. With personalized recommendations based on your location and interests, we're here to help you find the best fitness facilities, healthy dining options, running or cycling routes, and meditation spots wherever you go.
+Xplore is your ultimate travel companion, designed to enhance your journeys and make every trip truly memorable. With personalized recommendations based on your location and interests, we're here to help you find the best fitness facilities, healthy dining options, running or cycling routes, and meditation spots wherever you go. 
+This's only demo and entire code is protected due copyright.
 
 
 <a href='https://xploree.netlify.app/'>Demo link</a>
